@@ -1,0 +1,128 @@
+body {
+  background-color: gray;
+}
+/* HighScore Sidepanel  */
+.sidepanel {
+  height: 250px; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel h2 {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+.openbtn:hover {
+  background-color: #444;
+}
+#scores{
+  padding: 15px;
+  list-style-type: none;
+  color: white;
+}
+/* HighScore Sidepanel  */
+#timerBlock {
+  display: flex;
+  position: fixed;
+  font-size: 25px;
+  right: 10px;
+  top: 0;
+  padding: 5px;
+  margin: 15px;
+  background-color: green;
+}
+.instructionsCard {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin-top: 50px;
+  transform: translateX(-50%);
+  border-radius: 5%;
+  background-color: purple;
+}
+.instructionsCard h2{
+  align-items: center;
+}
+.mainTable {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  margin-top: 250px;
+  padding:100px;
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
+  transform: translateX(-50%);
+}
+.mainTable h2{
+  position: absolute;
+  font-size: 20px;
+  width: 100%;
+  left: 10%;
+  border-radius: 10%;
+  top: 5%;
+  background-color: purple;
+
+}
+.mainTable ul button{
+  display: block;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  padding: 30px;
+  background-color: purple;
+  margin: 10px;
+  border-radius: 10%;
+
+}
+.mainTable ul button:hover{
+  background-color: rgb(175, 137, 175);
+  margin: 10px;
+}
+.mainTable{
+  visibility: hidden;
+
+}
+#startButton {
+  padding: 15px;
+  margin-left: 80px;
+  background-color: green;
+}
+#startButton:hover{
+ 
+  background-color: rgb(127, 168, 127);
+}

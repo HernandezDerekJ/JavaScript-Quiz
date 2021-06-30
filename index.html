@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS Quiz's</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="highScoreSide" class="sidepanel">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <h2>HighScores</h2>
+      <ul id="scores""></ul>
+    </div>
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+
+    <div><span id="timerBlock"></span></div>
+
+
+    <div id="instructionsCardID" class="instructionsCard">
+      <h2>JavaScript Quiz</h2>
+      <p>You have 2 Minutes to answer 1 questions. Questions you don't answer will not count.</p>
+      <button id="startButton" onclick="starterButton()">Start</button>
+    </div>
+
+    <div id="mainID"class="mainTable">
+      <h2 id="question">Header</h2>
+      <ul class="answerChoices">
+        <button id="answer_zero" value = "" class="buttons" onclick="answerPicked(this)"></button>
+        <button id="answer_one" value = "" class="buttons" onclick="answerPicked(this)"></button>
+        <button id="answer_two" value = "" class="buttons" onclick="answerPicked(this)"></button>
+        <button id="answer_three" value = "" class="buttons" onclick="answerPicked(this)"></button>
+      </ul>
+    </div>
+
+    <div id="root"></div>
+    
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
